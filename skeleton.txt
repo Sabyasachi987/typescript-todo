@@ -1,0 +1,28 @@
+/backend
+│── /src
+│   ├── /config
+│   │   ├── prisma.ts       # Prisma client instance
+│   │   ├── env.ts          # Environment variable configuration (optional)
+│   ├── /middlewares
+│   │   ├── authMiddleware.ts # Authentication middleware (if needed)
+│   ├── /models
+│   │   ├── user.ts         # Zod validation schemas for user
+│   │   ├── todo.ts         # Zod validation schemas for todo
+│   ├── /routes
+│   │   ├── userRoutes.ts   # Routes for user signup, login
+│   │   ├── todoRoutes.ts   # Routes for todos (CRUD)
+│   ├── /controllers
+│   │   ├── userController.ts # Signup, login logic
+│   │   ├── todoController.ts # CRUD logic for todos   
+│   │   
+│   ├── app.ts              # Express app setup
+│   ├── server.ts           # Start the server
+│── /prisma
+│   ├── schema.prisma       # Prisma schema
+│   ├── migrations/         # Database migrations
+│── /dist                   # Compiled TypeScript output (ignored in Git)
+│── package.json
+│── tsconfig.json
+│── .env                    # Environment variables
+│── .gitignore
+│── README.md
